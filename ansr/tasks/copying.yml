@@ -1,0 +1,7 @@
+---
+ - name: webpage template
+   copy:
+        src: sunshine/html
+        dest: "{{ destination }}"
+        force: yes
+   become: yes

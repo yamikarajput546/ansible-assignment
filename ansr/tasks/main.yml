@@ -1,0 +1,12 @@
+
+# tasks file for ansr
+---
+- import_tasks: installnginx.yml
+  notify:
+    - start nginx
+- import_tasks: copying.yml
+  notify:
+    - restart nginx
+
+
+  
